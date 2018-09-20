@@ -8,8 +8,7 @@ jobs:
     environment:
       JVM_OPTS: -Xmx3200m
     steps:
-      - checkout
-                 
+      - checkout  
       - restore_cache:
           key: jars-{{ checksum "AndroidDemo/build.gradle" }}-{{ checksum  "AndroidDemo/app/build.gradle" }}
       - run:
@@ -18,7 +17,7 @@ jobs:
       - save_cache:
           paths:
             - ~/.gradle
-          ey: jars-{{ checksum "AndroidDemo/build.gradle" }}-{{ checksum  "AndroidDemo/app/build.gradle" }}
+          key: jars-{{ checksum "AndroidDemo/build.gradle" }}-{{ checksum  "AndroidDemo/app/build.gradle" }}
       - run:
           name: Run EspressoTests
           command: ./AndroidDemo/gradlew connectedDemoDebugAndroidTest
