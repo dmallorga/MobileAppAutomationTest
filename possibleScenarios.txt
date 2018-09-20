@@ -1,0 +1,40 @@
+# Below some scenarios we need to test for different kind of users
+
+
+##Passenger scenarios to test :
+
+# Login with valid credentials.
+# Login with invalid credentials.
+# Login without entering password.
+# Logout.
+# Search for a Driver.
+# Driver selection.
+# Perform a taxi request.
+# Cancel a taxi request.
+# Perform a call to a driver.
+# Check app displays user on board.
+# Perform a ride's payment (by app).
+# Add driver as favourite.
+# Submit feedback to a driver.
+# Schedule a ride.
+
+##Driver scenarios to test:
+
+# Login with valid credentials.
+# Login with invalid credentials.
+# Login without entering password.
+# Logout.
+# Search for a Passenger.
+# Passenger selection.
+# Accept a ride.
+# Do not accept a ride.
+# Cancel an accepted ride.
+# Create a ride.
+# Perform a call to a passenger.
+# Passenger on board.
+# Finish(charge) a ride paid by cash.
+# Finish(charge) a ride paid by app.
+# Accept scheduled ride.
+# Change to busy state.
+# Change to available state.
+# Check rides performed.

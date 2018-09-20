@@ -1,0 +1,7 @@
+## Below some suggestions I would recommend for a more user friendly app
+
+# Display a login failed prompt message.
+# Display a forgot password option (link) on login screen.
+# Display a new user option (link) on login screen.
+# Display a mytaxi logo on the login screen.
+# Display field validations through a UI animation (i.e. Login button changes it color after required fields are fill out).
