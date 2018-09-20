@@ -5,3 +5,4 @@
 # Display a new user option (link) on login screen.
 # Display a mytaxi logo on the login screen.
 # Display field validations through a UI animation (i.e. Login button changes it color after required fields are fill out).
+# Display back to previous screen on Driver Profile screen.
