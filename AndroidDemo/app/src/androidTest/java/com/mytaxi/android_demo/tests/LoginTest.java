@@ -20,9 +20,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static com.mytaxi.android_demo.core.Properties.MYTAXI_LOGOUT;
-import static com.mytaxi.android_demo.core.Properties.MYTAXI_PASSWORD;
-import static com.mytaxi.android_demo.core.Properties.MYTAXI_USERNAME;
+import static com.mytaxi.android_demo.generics.utils.MyTaxiConstants.MYTAXI_LOGOUT;
+import static com.mytaxi.android_demo.generics.utils.MyTaxiConstants.MYTAXI_PASSWORD;
+import static com.mytaxi.android_demo.generics.utils.MyTaxiConstants.MYTAXI_USERNAME;
 
 @RunWith(AndroidJUnit4.class)
 public class LoginTest {
