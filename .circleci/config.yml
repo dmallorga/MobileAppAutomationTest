@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/AndroidDemo/app
+    #working_directory: ~/AndroidDemo/app
     docker:
           
       - image: circleci/android:api-25-alpha
@@ -20,7 +20,7 @@ jobs:
           key: jars-{{ checksum "AndroidDemo/build.gradle" }}-{{ checksum  "AndroidDemo/app/build.gradle" }}
       - run:
           name: Run EspressoTests
-          command: ./AndroidDemo/gradlew connectedAndroidTest
+          command: ./home/circleci/AndroidDemo/app/gradlew connectedAndroidTest
       - store_artifacts:
           path: app/build/reports
           destination: reports
