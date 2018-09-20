@@ -14,6 +14,7 @@ import com.mytaxi.android_demo.R;
 import com.mytaxi.android_demo.activities.MainActivity;
 import com.mytaxi.android_demo.utils.idle_resources.LoginIdleManager;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -42,6 +43,10 @@ public class LoginTest {
         Espresso.onView(ViewMatchers.withId(R.id.btn_login)).perform(ViewActions.click());
         Espresso.onView(ViewMatchers.withId(R.id.drawer_layout)).perform(DrawerActions.open());
         Espresso.onView(ViewMatchers.withId(R.id.nav_username)).check(ViewAssertions.matches(ViewMatchers.withText(MYTAXI_USERNAME)));
+    }
+
+    @After
+    public void logout() {
         Espresso.onView(ViewMatchers.withText(MYTAXI_LOGOUT)).perform(ViewActions.click());
     }
 }
