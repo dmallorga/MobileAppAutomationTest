@@ -53,8 +53,13 @@ dependencies {
     implementation 'com.android.support.test.espresso:espresso-idling-resource:3.0.2'
 }
 
-task wrapper (type: Wrapper ) {
-    group 'Wrapper'
-    description 'Download gradle wrapper'
-    gradleVersion '4.4'
+sourceSets {
+    testSet {
+        java {
+            srcDir 'src/androidTest/java'
+        }
+        resources {
+            srcDir 'src/androidTest/resources'
+        }
+    }
 }
